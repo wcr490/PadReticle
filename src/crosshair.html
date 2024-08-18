@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="crosshair.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+  </head>
+
+  <body class="crosshair_container">
+    <div class="crosshair_item">
+      <img id="crosshair" src="" alt="Dynamic Image">
+    </div>
+    <script type="module">
+      import { invoke } from '@tauri-apps/api/tauri';
+
+      async function updateImage() {
+        try {
+          const base64Image = await invoke('update_crosshair_image');
+          const imgElement = document.getElementById('crosshair');
+          imgElement.src = `data:image/png;base64,${base64Image}`;
+        } catch (error) {
+          alert('Failed to update image:');
+          console.error('Failed to update image:', error);
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", () => {
+        updateImage();
+      });
+    </script>
+  </body>
+
+</html>

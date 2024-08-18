@@ -1,0 +1,15 @@
+.crosshair_container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    
+  height: 100vh;      
+  width: 100vw;           
+  overflow: hidden; 
+}
+.crosshair_item {
+  color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

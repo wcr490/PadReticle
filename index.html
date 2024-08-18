@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Welcome to Better Crosshair !!!</h1>
+      <div class="row">
+        <!--
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/src/assets/bili.svg" class="logo vite" alt="Vite logo" />
+        </a>
+        -->
+        <!-- Git Repository Address -->
+        <a href="https://baidu.com/" target="_blank">
+          <img
+            src="/src/assets/git.svg"
+            class="logo git"
+            alt="LOGO Git"
+          />
+        </a>
+        <a href="https://www.rust-lang.org/" target="_blank">
+          <img
+            src="/src/assets/rustacean.svg"
+            class="logo rust"
+            alt="LOGO Rust"
+          />
+        </a>
+      </div>
+        <div class="_container">
+          <div class="left-side">
+            <keep-alive class="server"></keep-alive>
+            <keep-aim class="server"></keep-aim>
+            <button class="gradient-button" id="crosshair">Toggle</button>
+          </div>
+          <div class="center-container">
+            <div class="right-side">
+              <img id="dynamic-image" src="" alt="Dynamic Image">
+            </div>
+            <div class="range_slider">
+              <input type="range" class="slider" id="colorSlider" min="0" max="100">
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #00ccff);
+}
+
+.logo.rust:hover {
+  filter: drop-shadow(0 0 2em #e43f0c);
+}
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  margin: 0;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: 0.75s;
+}
+
+.logo.git:hover {
+  filter: drop-shadow(0 0 2em #f3f6f6);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  text-align: center;
+}
+
+input,
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #0f0f0f;
+  background-color: #ffffff;
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #396cd8;
+}
+button:active {
+  border-color: #396cd8;
+  background-color: #e8e8e8;
+}
+
+input,
+button {
+  outline: none;
+}
+
+#greet-input {
+  margin-right: 5px;
+}
+
+/* Light */
+keep-alive {
+  margin-top: 20px;
+  border-radius: 50%; /* 50% 确保成为一个完美的圆 */
+  position: relative;
+  left: 20%;
+  transform: translateX(-50%); /* 使元素水平居中 */
+  width: 50px;
+  height: 50px;
+  background-color: #f80606;
+  will-change: filter;
+}
+keep-alive.on {
+  background-color: #07f315;
+}
+keep-alive.server:hover {
+  filter: drop-shadow(0 0 2em #009dff)
+}
+keep-aim {
+  margin-top: 20px;
+  border-radius: 50%; /* 50% 确保成为一个完美的圆 */
+  position: relative;
+  left: 20%;
+  transform: translateX(-50%); /* 使元素水平居中 */
+  width: 50px;
+  height: 50px;
+  background-color: #f80606;
+  will-change: filter;
+}
+keep-aim.on {
+  background-color: #07f315;
+}
+keep-aim.setting{
+  background-color: #fbff00;
+}
+keep-aim.server:hover {
+  filter: drop-shadow(0 0 2em #009dff)
+}
+
+._container {
+  color: #ffffff; /* 白色字体，确保对比度 */
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; /* 使用无衬线字体 */
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* 使左右两边的内容在垂直方向上居中 */
+  justify-content: space-between; /* 左右两边的内容保持距离 */
+  height: 200px; /* 根据需要设置容器高度 */
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column; /* 左侧的两个组件垂直排列 */
+  justify-content: space-between; /* 上下两个组件均匀分布 */
+  align-items: center;
+  margin-left: 200px; /* 调整为适当的左边距 */
+}
+
+.center-container {
+  display: flex;
+  align-items: center; /* 垂直方向对齐 */
+  justify-content: center; /* 水平方向对齐 */
+  flex: 1; /* 使该区域占据剩余空间 */
+}
+
+.right-side {
+  padding: 40px;
+  background-color: hsla(0, 0%, 50%);
+}
+
+.range_slider {
+  display: flex;
+  align-items: center; /* 垂直方向对齐 */
+  justify-content: center; /* 水平方向对齐 */
+  margin-left: 20px; /* 控制滑动条与图片之间的距离 */
+}
+
+.slider {
+  writing-mode: bt-lr; /* 使滑动条竖直显示 */
+  -webkit-appearance: slider-vertical; /* Safari 浏览器兼容性 */
+  width: 8px; /* 调整宽度 */
+  height: 200px; /* 设置滑动条的高度 */
+}
+.no-border {
+  border: none; /* 去除边框 */
+}
+
+
+.gradient-button {
+  transform: translateX(-10%);
+  margin-top: 20px;
+  background: linear-gradient(45deg, #cce200, #c8ff00);
+  color: rgb(0, 0, 0);
+  font:large;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 40%; 
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+
+.gradient-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgb(251, 255, 0), 0 0 30px rgb(55, 255, 0), 0 0 40px rgb(174, 255, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  input,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+}

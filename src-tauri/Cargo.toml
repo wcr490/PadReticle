@@ -1,0 +1,23 @@
+#![feature(file_create_new)]
+[package]
+name = "pad_reticle"
+version = "0.1.0"
+description = "Better Crosshair for Controller Players"
+authors = ["rm <wcra3066814296@outlook.com>"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
+
+[dependencies]
+tauri = { version = "1", features = [ "shell-all", "window-all"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+xci = "0.2.1"
+toml = "0.8.19"
+base64 = "0.22.1"
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
