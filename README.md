@@ -67,7 +67,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 **PadReticle** 
 
-基于Tauri开发，**手把玩家的准心工具**。
+基于Tauri，**手把玩家的准心工具**。
 
 ---
 
@@ -85,9 +85,15 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 1. 从仓库中下载最新版本的 PadReticle。
 2. 运行安装程序 `PadReticle_x.x.x_x64_en-US.msi`。
 3. **选择一个你可以轻松找到的安装目录**。
-4. 准备一个 [准心 PNG 文件](https://crosshair.themeta.gg/) 并将其放置在 **安装目录** 中（与 `PadReticle.exe` 文件相同的目录）。
+4. (**必须**)准备一个 [准心 PNG 文件](https://crosshair.themeta.gg/) 并将其放置在 **安装目录** 中（与 `PadReticle.exe` 文件相同的目录）。
 5. 将 PNG 文件重命名为 `crosshair.png`。
 6. 点击`PadReticle.exe`
+
+### 使用
+
+1. 两盏灯分别检测控制器是否连接，开镜键是否被按下（插线或者蓝牙都可以）
+2. 展示框为当前准心的样式
+3. 设置完毕后按下`Toggle`
 
 ### 设置
 通过创建 `config.toml` 文件来配置你的设置：
